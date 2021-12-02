@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* style.scss */
+/*
+1. 色はできる限り変数で。
+2. flexbox用の「mixin」は自分で設定。
+*/
+body {
+  color: #000;
+  font-size: 14px;
+  font-family: sans-serif;
+  background-color: #ddd;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.sample01 {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+.sample01__heading {
+  position: absolute;
+  top: 200px;
+  left: -80px;
+}
+
+.post__pic {
+  width: 60%;
+}
+.post__title {
+  color: #fff;
+  background-color: #000;
+  width: 450px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  position: absolute;
+  top: 350px;
+  left: -30px;
+}
+.post__content {
+  background-color: #fff;
+  width: 60%;
+}
+.post__text {
+  padding: 70px 0 20px 0;
+}
+.post__btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #f00;
+  display: block;
+  width: 50px;
+  text-align: center;
+}
